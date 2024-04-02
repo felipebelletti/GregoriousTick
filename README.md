@@ -1,4 +1,8 @@
-# GregoriousTick (Minecraft Forge 1.7.10)
+# GregoriousTick Fork (Minecraft Forge 1.7.10)
+A quick fork that fixes the following error on start up
+[07:18:10] [Server thread/ERROR] [GregoriousTickMod]: The mod GregoriousTickMod appears to have an invalid event annotation EventHandler. This annotation can only apply to methods with recognized event arguments - it will not be called
+
+This fork adds the missing parameter to the init EventHandler.
 
 ## Description
 GregoriousTick is a Minecraft mod designed for Minecraft version 1.7.10. It provides functionality to control the daylight cycle in the game based on player activity. When the last player logs out of the server, the mod stops the daylight cycle. When a player logs in, the daylight cycle is resumed.
